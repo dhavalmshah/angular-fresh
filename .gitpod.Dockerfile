@@ -11,7 +11,7 @@ USER root
 #
 # More information: https://www.gitpod.io/docs/42_config_docker/
 
-RUN RUN bash -c "nvm install --lts && \
+RUN bash -c "nvm install --lts && \
     nvm install-latest-npm && \
     sdk install java 8.0.232-amzn && \
     sdk default java 8.0.232-amzn && \
