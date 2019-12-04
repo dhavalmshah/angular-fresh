@@ -14,6 +14,4 @@ USER root
  RUN bash -c ". .nvm/nvm.sh && \
       nvm install --lts && \
     nvm install-latest-npm && \
-    sdk install java 8.0.232-amzn && \
-    sdk default java 8.0.232-amzn && \
     npm install -g @angular/cli"
