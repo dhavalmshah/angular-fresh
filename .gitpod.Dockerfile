@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-mysql
 
 USER root
 
@@ -11,8 +11,9 @@ USER root
 #
 # More information: https://www.gitpod.io/docs/42_config_docker/
 
-# RUN bash -c "nvm install --lts && \
-#    nvm install-latest-npm && \
-#    sdk install java 8.0.232-amzn && \
-#    sdk default java 8.0.232-amzn && \
-#    npm install -g @angular/cli"
+ RUN bash -c ". .nvm/nvm.sh && \
+      nvm install --lts && \
+    nvm install-latest-npm && \
+    sdk install java 8.0.232-amzn && \
+    sdk default java 8.0.232-amzn && \
+    npm install -g @angular/cli"
