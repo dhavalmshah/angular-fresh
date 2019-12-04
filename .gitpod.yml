@@ -7,5 +7,5 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
-- init: sdk install java 8.0.232-amzn -y && echo 'init script' # runs during prebuild
+- init: sdk install java 8.0.232-amzn -y && echo 'init script' && chmod +x initapp.sh # runs during prebuild
   command: sdk default java 8.0.232-amzn && echo 'start script'
